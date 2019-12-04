@@ -1,0 +1,14 @@
+
+  # set defaults
+  set ray_opaque_background, off
+  bg_color white
+  # load model
+  load 5g27.pdb_modified.updated_refine_001.pdb
+  #
+  # load Polder map
+  load 5g27_polder_map_coeffs_1.ccp4, polder
+  isomesh polder_surface, polder, 2.5
+  zoom chain A and resn MTN
+  show sticks, chain A and resn MTN
+  color grey, polder_surface
+  
